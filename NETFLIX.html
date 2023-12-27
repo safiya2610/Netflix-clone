@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #000; 
+        }
+        *{
+            margin: 0; padding: 0; font-family: 'Popping',sans-serif;
+            box-sizing: border-box;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/b4c7f092-0488-48b7-854d-ca055a84fb4f/5b22968d-b94f-44ec-bea3-45dcf457f29e/IN-en-20231204-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .button{
+            display: flex;
+        }
+        nav{
+            display: flex;
+            align-items: center; 
+            justify-content:space-between;
+            padding: 10px;
+        }
+        nav button{
+            border: 0;
+            background: #db0001;
+            color: #fff;
+            padding: 7px 20px;
+            font-size: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left:10px;
+            margin-top: -40px;
+        }
+    .eng{
+        background: transparent;
+        border: 1px solid #fff;
+        font-size: medium;
+    }
+    .header-content{
+        position:absolute;
+        top:150px;  left:200px; 
+        text-align: center;
+        transform: translate(-50px,-50px);
+        margin: 100px;
+        
+    }
+    .header-content h1{
+        font-size: 60px;
+        font-weight: 600;
+        line-height: 70px;
+        max-width: 650;
+    }
+    h3{
+        margin-bottom: 20px;
+        font-weight: 400;
+    }
+    .email-signup{
+        background: #fff;
+        border-radius: 4px;
+        display:flex;
+        align-items: center;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+    .email-signup input{
+        flex:1;                   border: 0; outline: 0;
+        margin-left: 20px;
+
+    }
+    button{
+        background-color: #db0001;
+        border: 0;
+        outline: 0;
+        font-size: 16px;
+        cursor: pointer;
+        padding: 15px 30px;
+    }
+    .features{
+        padding: 70px;
+        
+    }
+    img {
+    border: 0;
+    margin-top: -90px;
+}
+.row{
+      display: flex;
+    
+}
+.text-col{
+    margin: 20px;
+}
+h3{
+    margin-top: 10px;
+    margin-right:180px;
+}
+h1{
+    margin-top: 50px;
+}
+.im{
+    display: flex;
+}
+.overall{
+    padding: 50px;
+}
+
+.pura{
+    padding: 100px;
+}
+.f{
+    display: flex;
+}
+.feat{
+    display: flex;
+}
+.btn1{
+     background: rgb(45,45,45);
+     color: #fff;
+     line-height: 10px; width:900px;
+     margin-left: 170px;
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     
+    }
+.btn1:hover{
+    box-shadow: 5px 5px grey;
+    background-color: 20px 20px gray;
+}
+.overall-h{
+    padding: 100px; 
+}
+.btn{
+    margin: 60px;
+}
+h2{
+    padding:25px;
+    font-weight: 300;
+}
+    </style>
+</head>
+<body >
+    <div class="header">
+        <nav>
+            <img height="100px" width="200px" style="margin-top: 10px;" src="data:image/png;base64,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" alt="">
+            <div class="btn" >
+            <button class="eng">English </button>
+            <button>Sign In</button>
+        </div>
+        </nav>
+    
+      <div class="header-content" style="color: #fff;" >
+        <h1>Unlimited movies, TV shows and more.</h1>
+        <h3>Watch anywhere.Cancel anywhere.</h3>
+        <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        <form class="email-signup"><input type="email" placeholder="Email address" required>
+            <button type="submit">Get Started</button>
+        </form>
+    </div>
+    </div>
+
+   <div class="features">
+    <div class="row">
+        <div class="text-col" style="color:#fff">
+            <h1>Enjoy on your TV</h1>
+            <h3>Watch on smart TVs, PlayStation, X box, Chromecast, Apple TV, Blu-ray players and more.</h3>
+        </div>
+        <div class="img"><img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png" data-uia="nmhp-card-animation-asset-image" class="default-ltr-cache-1d3w5wq"></div>
+    </div>
+</div>
+
+<div style="background-color: rgb(35,35,35);height: 10px; margin-bottom: 90px;"></div>
+
+    
+<div class="overall" style="color: #fff;">
+    <div class="fea">
+        <div class="im"><img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg">
+            <div class="txt">
+                <h1 style="margin-bottom:-40px;margin-right: 320px;font-weight: 900;;">Download your shows to watch offline</h1>
+                <h3 style="margin: 50px; font-weight: 500; margin-right: 350px; margin-left: 0px;">Save your favourite easily and always have something to watch.</h3>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: rgb(35,35,35);height: 10px; margin-bottom: 90px;"></div>
+
+
+<div class="pura">
+    <div class="f">
+        <div class="tx" style="color: #fff; ">
+            <h1 style="font-weight: 1000;">Watch everywhere</h1>
+            <h3 style="font-weight: 550;">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV</h3>
+        </div>
+        <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png">
+    </div>
+</div>
+
+<div style="background-color: rgb(35,35,35);height: 10px; margin-bottom: 90px;"></div>
+
+
+<div class="p">
+    <div class="feat">
+        <div class="pic">
+            <img src="https://occ-0-6247-2186.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABVr8nYuAg0xDpXDv0VI9HUoH7r2aGp4TKRCsKNQrMwxzTtr-NlwOHeS8bCI2oeZddmu3nMYr3j9MjYhHyjBASb1FaOGYZNYvPBCL.png?r=54d"  >
+        </div >
+        <div class="t" style="color: #fff;">
+        <h1 style="color: #fff;">Create profile for kids</h1>
+        <h3>Send children on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
+        </div>
+    </div>
+</div>
+
+<div style="background-color: rgb(35,35,35);height: 10px; margin-bottom: 90px;"></div>
+
+
+<div class="overall-h">
+        <h1 style="color: #fff;margin-top: -90px; " align="center" style="font-size: xx-large;font-weight: 900;">Frequently Asked Question</h1>
+     <div class="btns"> 
+        <div class="btn">
+             <button type="button" class="btn1"  ><h2 >What is Netflix ?</h2><h2>+</h2></button>
+        </div>
+        <div class="btn">
+            <button type="button" class="btn1" ><h2 >How much does Netflix cost?</h2><h2>+</h2></button>
+       </div>
+       <div class="btn">
+        <button type="button" class="btn1" ><h2 >Where can I watch?</h2><h2>+</h2></button>
+       </div>
+       <div class="btn">
+        <button type="button" class="btn1" ><h2 >How do I cancel?</h2><h2>+</h2></button>
+       </div>
+       <div class="btn">
+        <button type="button" class="btn1" ><h2 >What can I watch on Netflix?</h2><h2>+</h2></button>
+       </div>
+     </div>
+
+    <div>
+        <h2 style="color:#fff" align="center">Ready to watch? Enter your email to create or restart your membership.</h2>
+        <form>
+            <input type="text" placeholder="Email address" style="padding: 15px;width: 480px;background-color: #000;color:#fff;font-weight: 100;border: 1px solid #fff;margin-left: 300px;" >
+            <button  style="color:#fff;font-weight: 600;" >Get Started ></button>
+        </form> 
+    </div>
+</div>
+</body>
+</html>
